@@ -1,0 +1,36 @@
+{
+  "name": "mt-app",
+  "version": "1.0.0",
+  "description": "My impressive Nuxt.js project",
+  "author": "duxiuxiu",
+  "private": true,
+  "scripts": {
+    "dev": "cross-env NODE_ENV=development yarn run devCompile && nodemon dist/index.js --watch server",
+    "build": "nuxt build",
+    "start": "cross-env NODE_ENV=production yarn run startCompile && node dist/index.js ",
+    "generate": "nuxt generate",
+    "test": "jest",
+    "devCompile": "babel server/index.js -d dist",
+    "startCompile": "babel server/index.js -d dist"
+  },
+  "dependencies": {
+    "cross-env": "^5.2.0",
+    "element-ui": "^2.4.11",
+    "koa": "^2.6.2",
+    "nuxt": "^2.0.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.7.5",
+    "@babel/core": "^7.7.5",
+    "@babel/node": "^7.7.4",
+    "@babel/polyfill": "^7.7.0",
+    "@babel/preset-env": "^7.7.6",
+    "@vue/test-utils": "^1.0.0-beta.27",
+    "babel-jest": "^24.1.0",
+    "jest": "^24.1.0",
+    "node-sass": "^4.13.0",
+    "nodemon": "^1.18.9",
+    "sass-loader": "^8.0.0",
+    "vue-jest": "^4.0.0-0"
+  }
+}
