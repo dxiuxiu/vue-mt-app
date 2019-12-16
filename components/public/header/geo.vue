@@ -1,0 +1,21 @@
+<template>
+    <div class="m-geo" id="">
+      <i class="el-icon-location">北京市</i>
+      <nuxt-link class = "changeCity" to ="/changeCity">城市切换</nuxt-link>
+      [香河 廊坊 天津]
+    </div>
+</template>
+<script>
+export default {
+   data() {
+      return {
+      }
+   },
+   activated() {
+   }
+}
+</script>
+
+<style lang = "scss">
+  /* @import "@/assets/css/public/layout.scss"; */
+</style>
